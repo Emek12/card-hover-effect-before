@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card1{
+    width: 250px;
+    height: 450px;
+    background-image: url(/tlo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+
+.card1::before{
+    content: 'Flowers';
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    top: 110%;
+    background-image: linear-gradient(to bottom, #97262600, #000000);
+    transition: transform .8s ease-in;
+    will-change: transform;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.card1:hover::before{
+    transform: translateY(-100%)
+}
+
+
+
+
+
+
+
